@@ -26,8 +26,8 @@ public class SpringbootTaskApplicationTests {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setSubject("开会通知");
         message.setText("下周放假");
-        message.setFrom("yangxiaokuan@163.com");
-        message.setTo("1428597883@qq.com");
+        message.setFrom("1111111111@163.com");
+        message.setTo("2222222222@qq.com");
         javaMailSender.send(message);
     }
     @Test //复杂邮件
@@ -42,8 +42,8 @@ public class SpringbootTaskApplicationTests {
         messageHelper.addAttachment("1.png",new File("D:\\picture\\1.png"));
         messageHelper.addAttachment("2.png",new File("D:\\picture\\2.png"));
 
-        messageHelper.setFrom("yangxiaokuan@163.com");
-        messageHelper.setTo("1428597883@qq.com");
+        messageHelper.setFrom("11111111111@163.com");
+        messageHelper.setTo("2222222222@qq.com");
         javaMailSender.send(message);
     }
 
